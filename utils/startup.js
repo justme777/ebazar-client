@@ -13,8 +13,12 @@ model.loadConfig = function(){
 }
 
 model.loadViews=function(){
-    //$("#sidebar-wrapper").load("/view/leftmenuview.html");
-    $("#mainview").load("/view/mainview.html");    
+    $("#mainview").load("/view/mainview.html");
+    $("#header").load("/view/headerview.html");
+    $("#categories").load("/view/categoriesview.html");
+    $("#brands").load("/view/brandsview.html");
+    $("#footer").load("/view/footerview.html");
+    //$("#slider").load("/view/sliderview.html");
 }
 
 model.login = function(){
