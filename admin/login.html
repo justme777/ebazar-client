@@ -1,0 +1,48 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <title>Вход</title>
+    <script src="/js/jquery.js"></script>
+    <script src="/utils/startup.js"></script>
+    <!-- Stylesheets -->
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet'>
+
+    <link href="/css/loginStyle.css" rel="stylesheet" />
+
+   
+    <!-- Optimize for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body onload="rssmailer.util.startup.loadConfig()">
+    <!-- MAIN CONTENT -->
+    <div id="content">
+        
+        <form id="loginform">
+            <fieldset>
+                <p>
+                    <label for="login-username">имя пользователя</label>
+                    <input id="username" type="text" class="round full-width-input" />
+                </p>
+
+                <p>
+                    <label for="login-password">пароль</label>
+                    <input id="password" class="round full-width-input" type="password" />
+                </p>
+
+                <!-- <p>I've <a href="#">forgotten my password</a>.</p> -->
+
+                <input type="button" ID="btnEnter" value="ВХОД" class="button round blue image-right ic-right-arrow" onclick="rssmailer.util.startup.login()" />
+
+            </fieldset>
+
+            <br />
+            <div id="informationBox" class="information-box round">Чтобы открыть страницу введите имя пользователя и пароль.</div>
+            <div id="errorBox" class="error-box round" style="visibility: hidden">Неверно введен логин или пароль.</div>
+        </form>
+    </div>
+    <!-- end content -->
+    <!-- FOOTER -->
+    <!-- end footer -->
+
+</body>
+</html>

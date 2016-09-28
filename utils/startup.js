@@ -21,6 +21,11 @@ model.loadViews=function(){
     //$("#slider").load("/view/sliderview.html");
 }
 
+model.loadAdminViews=function(){
+    $("#sidebar-wrapper").load("/admin/leftmenu.html");
+    $("#mainview").load("/admin/mainview.html");
+}
+
 model.login = function(){
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
