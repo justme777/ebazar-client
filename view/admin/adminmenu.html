@@ -1,0 +1,32 @@
+<ul id="adminmenu" class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="registration.html">Регистрация</a>
+                </li>
+                <li>
+                    <a href="#" data-bind="click:showAddMarketView">Добавить ТЦ</a>
+                </li>
+                <li>
+                    <a href="#">Создать виджет</a>
+                </li>
+                <li>
+                    <a href="#">Настройки</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+<script src="/viewmodel/adminmenu.js"></script>
+<script>
+    ko.applyBindings(ebazar.vm.adminmenu, document.getElementById("adminmenu"));
+</script>

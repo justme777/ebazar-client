@@ -1,0 +1,38 @@
+<div id="div_create_market">
+<form data-toggle="validator" role="form" class="form-horizontal">
+    <div class="form-group">
+        <label for="ddlMarketTypes" class="col-sm-2 control-label">Тип</label>
+        <div class="col-sm-2">
+            <select id="ddlMarketTypes" data-bind="options: marketTypes, 
+                                                    optionsText:'name', 
+                                                    value:'id'," class="form-control">
+            </select>      
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="txtName" class="col-sm-2 control-label">Наименование</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" id="txtName" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="ddlAddresses" class="col-sm-2 control-label">Тип</label>
+        <div class="col-sm-2">
+            <select id="ddlAddresses" data-bind="foreach: addresses" class="form-control">
+                <option value="one" data-bind="text:name"></option>
+            </select>      
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-12">
+            <button id="btnCreateMarket" data-bind="click:createMarket" type="button" class="btn btn-primary">Добавить</button>
+        </div>
+    </div>
+</form>
+</div>
+<script src="/viewmodel/marketvm.js"></script>
+<script>
+    ko.applyBindings(ebazar.vm.market, document.getElementById("div_create_market"));
+    ebazar.vm.market.loadFormData();
+</script>
+    

@@ -13,17 +13,17 @@ model.loadConfig = function(){
 }
 
 model.loadViews=function(){
-    $("#mainview").load("/view/mainview.html");
-    $("#header").load("/view/headerview.html");
-    $("#categories").load("/view/categoriesview.html");
-    $("#brands").load("/view/brandsview.html");
-    $("#footer").load("/view/footerview.html");
+    $("#mainview").load("view/mainview.html");
+    $("#header").load("view/headerview.html");
+    $("#categories").load("view/categoriesview.html");
+    $("#brands").load("view/brandsview.html");
+    $("#footer").load("view/footerview.html");
     //$("#slider").load("/view/sliderview.html");
 }
 
 model.loadAdminViews=function(){
-    $("#sidebar-wrapper").load("/admin/leftmenu.html");
-    $("#mainview").load("/admin/mainview.html");
+    $("#sidebar-wrapper").load("../view/admin/adminmenu.html");
+    $("#mainview").load("../view/admin/mainview.html");
 }
 
 model.login = function(){
